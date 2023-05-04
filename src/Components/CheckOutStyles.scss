@@ -1,0 +1,48 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items:center; 
+    background-color: rgb(244, 244, 244);
+    margin-left:40px;
+    padding: 20px;
+    width: 350px;
+    height: 350px;
+
+    .box-heading{
+        padding-bottom:20px;
+    }
+    .box-total{
+        margin-bottom: 40px;
+        letter-spacing: 0.5px;
+        padding:10px;
+        h2{
+            margin-bottom: 5px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        input{
+            margin: 6px;
+        }
+    }
+    .link-button{
+        background-color: rgb(235, 185, 21);
+        padding: 0.4em 4em;
+        border-radius: 2em;
+        border-bottom: 2px solid rgb(211, 166, 19);
+        font-size: 20px;
+        color: rgb(20, 20, 20);
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .link-button:hover{ 
+        background-color: rgb(197, 153, 8);
+    }
+    .extra-button{
+        background-color: rgb(255, 255, 255);
+        margin-top: 2.5em;
+        border-radius: 5px;
+        border-color: rgb(202, 202, 202);
+        padding: 1em 7em;
+        cursor: pointer;
+    }
+}

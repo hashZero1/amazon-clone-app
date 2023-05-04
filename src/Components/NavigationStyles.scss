@@ -1,0 +1,31 @@
+.navigation{
+    background-color: rgb(236, 236, 236);
+    min-height: 100vh;
+    padding: 20px 0px;
+
+    .nav-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .logo-container{
+        font-size: 20px;
+        color: rgb(17, 17, 17);
+        text-decoration: none;
+        font-weight: 600;
+    }
+     
+    .nav-links-container{
+        font-size: 20px;
+        background-color: rgb(207, 97, 97);
+        padding: 8px 20px;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+    .nav-links-container:hover{
+        background-color: rgb(233, 39, 39);
+    }
+    .nav-links{
+        color: rgb(241, 241, 241);
+        text-decoration: none;   
+    } 
+}

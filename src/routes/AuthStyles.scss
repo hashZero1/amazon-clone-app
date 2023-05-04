@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .forms{
+        display: flex;
+        justify-content: space-between;
+        margin: 2em;
+    }
+    .login-logo{
+        margin-top: 20px;
+        width: 12%;
+    }
+}
