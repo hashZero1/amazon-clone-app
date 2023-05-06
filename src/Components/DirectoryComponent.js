@@ -12,15 +12,15 @@ return(
         {products.map(product => (
           <div className='home-container'>
             <div className="home__row" >
-              <div className="product" >
-                <div className="product__info">
-                <Link className='links' to={`/details/${product.id}`} key={product.id} >
+              <div  iv className="product" >
+              <Link className='links' to={`/details/${product.id}`} key={product.id} >
+                <div className="product__info">  
                 <p className="title">{product.title}</p>
                 <p className="product__price">
                   <small>₹</small>
                   <strong>{product.price}</strong>
                   </p>
-              </Link>
+             
          <div className="product__rating">
           {Array(product.rating)
             .fill()
@@ -30,8 +30,9 @@ return(
         </div>
       </div>
       <img src={product.image} alt={product.title} />
-      <button onClick={() => addItemToCart(product)}>Add to Basket</button>
+      {/* <button onClick={() => addItemToCart(product)}>Add to Basket</button> */}
       <ToastContainer/>
+      </Link>
       </div>
     </div>
           </div>
