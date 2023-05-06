@@ -31,8 +31,12 @@
            
         }
         .item-image-main{
+            display: flex;
+            margin-top: 6em;
+            justify-content: center;
+            align-items:flex-start;
            width: 80%;
-            margin-left: 20px;
+            margin-left: 40px;
             img{
                 width: 100%;
             }
@@ -54,6 +58,8 @@
             border-radius: 2em;
             border: none;
             cursor: pointer;
+            text-decoration: none;
+            color: black;
             background-color: #e77600;
             font-size: 15px;
         }

@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { Products } from "../Products"
 import './ProductDetailStyles.scss'
 import { useContext } from "react"
@@ -44,7 +44,9 @@ export default function ProductDetails(){
             </div>
          
             <div className="description">
-                    <button className="buy-button">Buy Now</button>
+                <Link to='/auth' onClick={() => addItemToCart(productsData)}className="buy-button">Buy Now
+                </Link>
+                    
                     <button onClick={() => addItemToCart(productsData)} className="cart-button">Add To Cart</button>
                 </div>
             <div className="select-items">
