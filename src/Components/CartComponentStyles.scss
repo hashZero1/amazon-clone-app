@@ -14,9 +14,17 @@
   .checkout__empty {
     max-width: 1000px;
     margin-top: 10px;
-  }
-  .checkout__empty h1 {
-    margin-bottom: 5px;
+
+    h1 {
+      margin-bottom: 5px;
+    }
+    p{
+      border: 1px solid #b3b3b3;
+      padding: 20px;
+      letter-spacing: 0.6px;
+      border-radius: 0.6em;
+      background-color: rgb(241, 241, 241);
+    }
   }
 }
 
