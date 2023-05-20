@@ -1,3 +1,5 @@
+$layout-breakpoint-medium: 1360px;
+
 .box{
     display: flex;
     flex-direction: column;
@@ -44,5 +46,26 @@
         border-color: rgb(202, 202, 202);
         padding: 1em 7em;
         cursor: pointer;
+    }
+}
+
+
+
+
+@media screen and (max-width: $layout-breakpoint-medium) {
+    .box{
+        margin-left:20px;
+        padding: 20px;
+        width: 300px;
+        height: 350px;
+
+
+        .link-button{
+            font-size: 19px;
+        }
+        .extra-button{
+            margin-top: 2.2em;
+            padding: 1em 6em;
+        }
     }
 }
