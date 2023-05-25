@@ -4,6 +4,7 @@ import "./ProductDetailStyles.scss";
 import { useContext } from "react";
 import { CartContext } from "../Context/CartContext";
 import Checkout from "./CheckoutComponent";
+import { motion as m } from "framer-motion";
 
 export default function ProductDetails() {
   //extract id from params (convert string to number using parseInt) if undefined
@@ -12,7 +13,13 @@ export default function ProductDetails() {
   const productsData = Products.find((pd) => pd.id === parseInt(id));
   return (
     <>
-      <section className="product-info">
+      <m.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.75, ease: "easeOut" }}
+        className="product-info"
+      >
         <div className="item-image-parent">
           <div className="item-list-vertical">
             <div className="thumb-box">
@@ -104,7 +111,7 @@ export default function ProductDetails() {
         <div>
           <Checkout />
         </div>
-      </section>
+      </m.section>
     </>
   );
 }
