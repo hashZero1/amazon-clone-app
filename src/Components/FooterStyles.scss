@@ -1,19 +1,15 @@
+$layout-breakpoint-medium: 1360px;
+$layout-breakpoint-small: 480px;
+
 footer {
-    position: relative;
-    margin-bottom: 0;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    color: white;
-  
+  display: flex;
+  flex-direction: column;
+  color: white;
+
   .footer__backToTop {
-    display: block;
-    text-align: center;
     padding: 15px 0;
     font-size: 13px;
     background-color: #374658;
-    cursor: pointer;
   }
   .footer__backToTop:hover {
     background-color: #465461;
@@ -58,5 +54,19 @@ footer {
     outline: none !important;
     opacity: 0 !important;
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: $layout-breakpoint-small) {
+  footer {
+    width: 100%;
+    background-color: #232f3e;
+    .footer__linkContainer {
+      flex-direction: column;
+      padding: 10px;
+      align-items: start;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 }

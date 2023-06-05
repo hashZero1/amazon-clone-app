@@ -104,6 +104,9 @@ export default function ProductDetails() {
                 <option>XL</option>
                 <option>2XL</option>
               </select>
+              <div>
+                <b>Details:</b>
+              </div>
               <p>{productsData.info}</p>
             </div>
           </div>
